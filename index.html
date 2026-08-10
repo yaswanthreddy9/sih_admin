@@ -4,7 +4,15 @@
 <style>
 .menuBtn{display:block;border:1px solid var(--bd);background:#fff;color:var(--n);width:42px;height:42px;border-radius:7px;font-size:22px;margin-right:15px}.overlay{display:none;position:fixed;inset:0;background:#0005;z-index:40}.overlay.open{display:block}
 :root{--n:#102f50;--b:#1d5d91;--bg:#f3f6f9;--t:#1d2a36;--m:#6b7a88;--bd:#dbe4eb;--g:#16835b;--o:#c96b0a;--r:#b42318}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--t)}button,input,select{font:inherit}button{cursor:pointer}.top{height:8px;background:linear-gradient(90deg,#e38b2c 0 33%,#fff 33% 66%,#16835b 66%)}header{height:72px;background:#fff;border-bottom:1px solid var(--bd);display:flex;align-items:center;padding:0 28px;position:sticky;top:0;z-index:20}.brand{display:flex;gap:11px;align-items:center}.emblem{width:40px;height:40px;border:2px solid var(--n);border-radius:50%;display:grid;place-items:center;color:var(--n);font-weight:bold}.brand b{display:block;color:var(--n);font-size:19px}.brand small{color:var(--m)}.right{margin-left:auto;text-align:right}.right b{display:block}.right small{color:var(--m)}.layout{display:flex;min-height:calc(100vh - 80px)}aside{position:fixed;left:0;top:80px;bottom:0;width:240px;background:var(--n);padding:20px 13px;color:#fff;transform:translateX(-105%);transition:transform .25s ease;z-index:50;box-shadow:10px 0 30px #0003;overflow:auto}aside.open{transform:translateX(0)}.side-title{padding:0 12px 15px;font-size:11px;letter-spacing:1px;text-transform:uppercase;opacity:.65}.side button{width:100%;border:0;background:transparent;color:#e6eff6;text-align:left;padding:12px 13px;border-radius:6px;margin:2px 0}.side button.active,.side button:hover{background:var(--b)}main{padding:28px;max-width:1500px;width:100%}.view{display:none}.view.active{display:block}.title{display:flex;justify-content:space-between;align-items:end;margin-bottom:20px}.title h1{margin:0;color:var(--n);font-size:29px}.title p{color:var(--m);margin:6px 0 0}.action{border:0;border-radius:6px;padding:11px 16px;background:var(--n);color:#fff;font-weight:700}.metrics{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.metric,.card{background:#fff;border:1px solid var(--bd);border-radius:9px;padding:18px;box-shadow:0 5px 18px #12355b0d}.metric small{color:var(--m)}.metric strong{display:block;color:var(--n);font-size:26px;margin-top:8px}.grid{display:grid;grid-template-columns:1.6fr 1fr;gap:17px;margin-top:18px}h3{color:var(--n)}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:11px 9px;border-bottom:1px solid #e8edf1;font-size:13px}th{color:#5c6e7e;background:#f8fafb}.status,.pri{display:inline-block;padding:5px 8px;border-radius:13px;font-size:11px;font-weight:700}.sub{background:#e9f1f8;color:var(--b)}.ass{background:#fff1dd;color:#9a5a08}.prog{background:#e8f5ef;color:#126744}.res{background:#e4f5ed;color:#126744}.hi{background:#fde8e7;color:#a52118}.med{background:#fff2dc;color:#9a5a08}.queue{border-left:4px solid var(--r);padding:12px 14px;background:#fff8f7;border-radius:5px;margin-bottom:10px}.mini{border:1px solid var(--bd);background:#fff;border-radius:6px;padding:7px 9px;color:var(--n)}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:15px}.filters input,.filters select{border:1px solid var(--bd);border-radius:6px;padding:10px;background:#fff}.filters input{min-width:240px}.chart{height:210px;display:flex;align-items:end;gap:12px;padding:10px 5px 0;border-bottom:1px solid var(--bd)}.bar{flex:1;background:var(--b);border-radius:5px 5px 0 0;position:relative;min-height:20px}.bar span{position:absolute;bottom:-22px;left:50%;transform:translateX(-50%);font-size:10px;color:var(--m)}.map{height:350px;border:1px solid var(--bd);border-radius:9px;background:linear-gradient(145deg,#e7efe9,#dce8ef);position:relative;overflow:hidden}.map:before{content:"";position:absolute;inset:15px;background:repeating-linear-gradient(20deg,transparent 0 55px,#fff 56px 59px),repeating-linear-gradient(110deg,transparent 0 75px,#fff 76px 79px)}.marker{position:absolute;width:30px;height:30px;border-radius:50%;background:var(--r);border:4px solid #fff;box-shadow:0 2px 7px #777}.m1{left:40%;top:35%}.m2{left:61%;top:53%;background:var(--o)}.m3{left:25%;top:62%;background:var(--g)}.m4{left:72%;top:27%}.detail{display:grid;grid-template-columns:1fr 1fr;gap:12px}.detail div{background:#f8fafb;border:1px solid var(--bd);border-radius:7px;padding:12px}.detail small{display:block;color:var(--m);margin-bottom:5px}.timeline{display:flex;gap:8px;margin:20px 0}.tl{flex:1;text-align:center;font-size:11px;color:#8794a0}.tl .d{width:25px;height:25px;border-radius:50%;background:#dce4ea;margin:auto auto 7px;display:grid;place-items:center}.tl.done{color:var(--g);font-weight:700}.tl.done .d{background:#dcf2e7}.modal{position:fixed;inset:0;background:#0006;display:none;align-items:center;justify-content:center;padding:20px;z-index:90}.modal.open{display:flex}.box{background:#fff;border-radius:11px;padding:24px;max-width:700px;width:100%;max-height:90vh;overflow:auto}.close{float:right;border:0;background:none;font-size:24px;color:var(--m)}.toast{position:fixed;right:25px;bottom:25px;background:var(--n);color:#fff;padding:13px 17px;border-radius:8px;display:none;z-index:100}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--t)}button,input,select{font:inherit}button{cursor:pointer}.top{height:8px;background:linear-gradient(90deg,#e38b2c 0 33%,#fff 33% 66%,#16835b 66%)}header{height:72px;background:#fff;border-bottom:1px solid var(--bd);display:flex;align-items:center;padding:0 28px;position:sticky;top:0;z-index:20}.brand{display:flex;gap:11px;align-items:center}.emblem{width:40px;height:40px;border:2px solid var(--n);border-radius:50%;display:grid;place-items:center;color:var(--n);font-weight:bold}.brand b{display:block;color:var(--n);font-size:19px}.brand small{color:var(--m)}.right{margin-left:auto;text-align:right}.right b{display:block}.right small{color:var(--m)}.layout{display:flex;min-height:calc(100vh - 80px)}aside{position:fixed;left:0;top:80px;bottom:0;width:240px;background:var(--n);padding:20px 13px;color:#fff;transform:translateX(-105%);transition:transform .25s ease;z-index:50;box-shadow:10px 0 30px #0003;overflow:auto}aside.open{transform:translateX(0)}.side-title{padding:0 12px 15px;font-size:11px;letter-spacing:1px;text-transform:uppercase;opacity:.65}.side button{width:100%;border:0;background:transparent;color:#e6eff6;text-align:left;padding:12px 13px;border-radius:6px;margin:2px 0}.side button.active,.side button:hover{background:var(--b)}main{padding:28px;max-width:1500px;width:100%}.view{display:none}.view.active{display:block}.title{display:flex;justify-content:space-between;align-items:end;margin-bottom:20px}.title h1{margin:0;color:var(--n);font-size:29px}.title p{color:var(--m);margin:6px 0 0}.action{border:0;border-radius:6px;padding:11px 16px;background:var(--n);color:#fff;font-weight:700;transition:opacity 0.2s;}.action:hover{opacity:0.9;}.metrics{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.metric,.card{background:#fff;border:1px solid var(--bd);border-radius:9px;padding:18px;box-shadow:0 5px 18px #12355b0d}.metric small{color:var(--m)}.metric strong{display:block;color:var(--n);font-size:26px;margin-top:8px}.grid{display:grid;grid-template-columns:1.6fr 1fr;gap:17px;margin-top:18px}h3{color:var(--n);margin-top:0;}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:11px 9px;border-bottom:1px solid #e8edf1;font-size:13px}th{color:#5c6e7e;background:#f8fafb}.status,.pri{display:inline-block;padding:5px 8px;border-radius:13px;font-size:11px;font-weight:700}.sub{background:#e9f1f8;color:var(--b)}.ass{background:#fff1dd;color:#9a5a08}.prog{background:#e8f5ef;color:#126744}.res{background:#e4f5ed;color:#126744}.hi{background:#fde8e7;color:#a52118}.med{background:#fff2dc;color:#9a5a08}.queue{border-left:4px solid var(--r);padding:12px 14px;background:#fff8f7;border-radius:5px;margin-bottom:10px}.mini{border:1px solid var(--bd);background:#fff;border-radius:6px;padding:7px 9px;color:var(--n);transition:background 0.2s;}.mini:hover{background:#f8fafb;}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:15px}.filters input,.filters select{border:1px solid var(--bd);border-radius:6px;padding:10px;background:#fff}.filters input{min-width:240px}.chart{height:210px;display:flex;align-items:end;gap:12px;padding:10px 5px 0;border-bottom:1px solid var(--bd)}.bar{flex:1;background:var(--b);border-radius:5px 5px 0 0;position:relative;min-height:20px}.bar span{position:absolute;bottom:-22px;left:50%;transform:translateX(-50%);font-size:10px;color:var(--m)}.map{height:350px;border:1px solid var(--bd);border-radius:9px;background:linear-gradient(145deg,#e7efe9,#dce8ef);position:relative;overflow:hidden}.map:before{content:"";position:absolute;inset:15px;background:repeating-linear-gradient(20deg,transparent 0 55px,#fff 56px 59px),repeating-linear-gradient(110deg,transparent 0 75px,#fff 76px 79px)}.marker{position:absolute;width:30px;height:30px;border-radius:50%;background:var(--r);border:4px solid #fff;box-shadow:0 2px 7px #777}.m1{left:40%;top:35%}.m2{left:61%;top:53%;background:var(--o)}.m3{left:25%;top:62%;background:var(--g)}.m4{left:72%;top:27%}.detail{display:grid;grid-template-columns:1fr 1fr;gap:12px}.detail div{background:#f8fafb;border:1px solid var(--bd);border-radius:7px;padding:12px}.detail small{display:block;color:var(--m);margin-bottom:5px}.timeline{display:flex;gap:8px;margin:20px 0}.tl{flex:1;text-align:center;font-size:11px;color:#8794a0}.tl .d{width:25px;height:25px;border-radius:50%;background:#dce4ea;margin:auto auto 7px;display:grid;place-items:center}.tl.done{color:var(--g);font-weight:700}.tl.done .d{background:#dcf2e7}.modal{position:fixed;inset:0;background:#0006;display:none;align-items:center;justify-content:center;padding:20px;z-index:90;backdrop-filter:blur(2px);}.modal.open{display:flex}.box{background:#fff;border-radius:11px;padding:24px;max-width:700px;width:100%;max-height:90vh;overflow:auto;position:relative;}.close{position:absolute;right:20px;top:20px;border:0;background:none;font-size:28px;color:var(--m);line-height:1;transition:color 0.2s;}.close:hover{color:var(--r);}.toast{position:fixed;right:25px;bottom:25px;background:var(--n);color:#fff;padding:13px 17px;border-radius:8px;display:none;z-index:100;box-shadow:0 4px 15px rgba(0,0,0,0.2);}
+
+/* Lightbox Styles for Image Viewing */
+.lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); z-index:1000; align-items:center; justify-content:center; padding:20px; backdrop-filter:blur(4px); }
+.lightbox.open { display:flex; }
+.lightbox img { max-width:100%; max-height:90vh; border-radius:8px; box-shadow:0 10px 40px rgba(0,0,0,0.5); border:2px solid #fff; }
+.lightbox .close-lb { position:absolute; top:20px; right:30px; color:#fff; font-size:45px; background:none; border:none; cursor:pointer; opacity:0.7; transition:opacity 0.2s; }
+.lightbox .close-lb:hover { opacity:1; }
+
 @media(max-width:1100px){.metrics{grid-template-columns:repeat(3,1fr)}.grid{grid-template-columns:1fr}}
 @media(max-width:750px){main{padding:18px}.metrics{grid-template-columns:1fr 1fr}.detail{grid-template-columns:1fr}.title{flex-direction:column;align-items:start;gap:10px}.right{display:none}}
 </style></head><body>
@@ -14,7 +22,7 @@
 <div id="overlay" class="overlay" onclick="toggleMenu()"></div><main>
 <section id="dash" class="view active"><div class="title"><div><h1>Government Operations Dashboard</h1><p>Monitor, assign and resolve citizen grievances.</p></div><button class="action" onclick="show('griev',document.querySelectorAll('.side button')[1])">Review Grievances</button></div>
 <div class="metrics"><div class="metric"><small>Total Grievances</small><strong>12,486</strong></div><div class="metric"><small>Pending</small><strong>2,184</strong></div><div class="metric"><small>In Progress</small><strong>3,721</strong></div><div class="metric"><small>Resolved</small><strong>6,581</strong></div><div class="metric"><small>High Priority</small><strong>318</strong></div><div class="metric"><small>Verification</small><strong>74</strong></div></div>
-<div class="grid"><div class="card"><h3>Recent Grievances</h3><table><thead><tr><th>ID</th><th>Issue</th><th>Location</th><th>Priority</th><th>Status</th></tr></thead><tbody><tr onclick="openModal()" style="cursor:pointer"><td>VMC-2026-004821</td><td>Pothole</td><td>Parul University Gate</td><td><span class="pri hi">HIGH</span></td><td><span class="status ass">Assigned</span></td></tr><tr><td>VMC-2026-004822</td><td>Garbage</td><td>Waghodia Road</td><td><span class="pri med">MEDIUM</span></td><td><span class="status sub">Pending</span></td></tr><tr><td>VMC-2026-004823</td><td>Streetlight</td><td>Gotri</td><td><span class="pri hi">HIGH</span></td><td><span class="status prog">In Progress</span></td></tr></tbody></table></div>
+<div class="grid"><div class="card"><h3>Recent Grievances</h3><table><thead><tr><th>ID</th><th>Issue</th><th>Location</th><th>Priority</th><th>Status</th></tr></thead><tbody><tr onclick="openModal()" style="cursor:pointer"><td>VMC-2026-004821</td><td>Pothole</td><td>Near Parul University Gate 2</td><td><span class="pri hi">HIGH</span></td><td><span class="status ass">Assigned</span></td></tr><tr><td>VMC-2026-004822</td><td>Garbage</td><td>Waghodia Road</td><td><span class="pri med">MEDIUM</span></td><td><span class="status sub">Pending</span></td></tr><tr><td>VMC-2026-004823</td><td>Streetlight</td><td>Gotri</td><td><span class="pri hi">HIGH</span></td><td><span class="status prog">In Progress</span></td></tr></tbody></table></div>
 <div class="card"><h3>AI Priority Queue</h3><div class="queue"><b>Road damage cluster</b>12 related reports · high traffic area<br><span class="pri hi">HIGH</span></div><div class="queue" style="border-left-color:var(--o)"><b>Water leakage</b>8 related reports<br><span class="pri med">HIGH</span></div><div class="queue" style="border-left-color:var(--b)"><b>Streetlight outage</b>6 related reports<br><span class="pri med">MEDIUM</span></div></div></div>
 <div class="grid"><div class="card"><h3>Grievances by Category</h3><div class="chart"><div class="bar" style="height:86%"><span>Road</span></div><div class="bar" style="height:62%"><span>Waste</span></div><div class="bar" style="height:47%"><span>Water</span></div><div class="bar" style="height:38%"><span>Light</span></div><div class="bar" style="height:29%"><span>Drain</span></div></div></div><div class="card"><h3>Department Workload</h3><p>Road & Infrastructure <b style="float:right">42%</b></p><div style="height:8px;background:#e5ebf0"><div style="width:72%;height:100%;background:var(--b)"></div></div><p>Sanitation <b style="float:right">31%</b></p><div style="height:8px;background:#e5ebf0"><div style="width:53%;height:100%;background:var(--b)"></div></div><p>Water Supply <b style="float:right">18%</b></p><div style="height:8px;background:#e5ebf0"><div style="width:31%;height:100%;background:var(--b)"></div></div></div></div></section>
 
@@ -34,33 +42,90 @@
 
 <section id="audit" class="view"><div class="title"><div><h1>Audit Log</h1><p>Traceable administrative activity.</p></div></div><div class="card"><table><thead><tr><th>Time</th><th>Actor</th><th>Action</th><th>Complaint</th></tr></thead><tbody><tr><td>10 Aug 2026 16:20</td><td>Officer B</td><td>Assigned complaint</td><td>VMC-2026-004821</td></tr><tr><td>10 Aug 2026 16:15</td><td>AI Assistant</td><td>Related issue cluster detected</td><td>VMC-2026-004821</td></tr><tr><td>10 Aug 2026 16:12</td><td>Officer A</td><td>Priority changed Medium → High</td><td>VMC-2026-004821</td></tr></tbody></table></div></section>
 </main></div>
-<div id="modal" class="modal"><div class="box"><button class="close" onclick="closeModal()">×</button><h2 style="color:var(--n)">Complaint VMC-2026-004821</h2><div class="detail"><div><small>Issue</small><b>Pothole / Road Damage</b></div><div><small>Location</small><b>Parul University Gate 2</b></div><div><small>Category</small><b>Road & Transport</b></div><div><small>Priority</small><b style="color:var(--r)">HIGH</b></div><div><small>Location Confidence</small><b>91%</b></div><div><small>Duplicate Probability</small><b>88%</b></div><div><small>Spam Probability</small><b>3%</b></div><div><small>Department</small><b>Road & Infrastructure</b></div></div><div class="card" style="margin-top:15px"><h3>AI Analysis</h3><p>The complaint is strongly related to issue cluster ROAD-VAD-042.</p><b>12 related citizen reports · 92% semantic similarity</b></div><div class="timeline"><div class="tl done"><div class="d">✓</div>Submitted</div><div class="tl done"><div class="d">✓</div>Assigned</div><div class="tl done"><div class="d">✓</div>Inspection</div><div class="tl"><div class="d">4</div>In Progress</div><div class="tl"><div class="d">5</div>Resolved</div></div><button class="action" onclick="update('in_progress')">Mark In Progress</button> <button class="action" style="background:var(--g)" onclick="update('resolved')">Mark Resolved</button></div></div>
+
+<!-- Static review modal with dummy data for immediate testing -->
+<div id="modal" class="modal" onclick="if(event.target===this)closeModal()">
+  <div class="box">
+    <button class="close" onclick="closeModal()">×</button>
+    <h2 style="color:var(--n);margin-top:0;">Complaint VMC-2026-004821</h2>
+    
+    <div class="detail">
+      <div><small>Issue</small><b>Pothole / Road Damage</b></div>
+      <div><small>Reported Address</small><b>Near Parul University Gate 2, Waghodia Road</b></div>
+      <div><small>Category</small><b>Road & Transport</b></div>
+      <div><small>Priority</small><b style="color:var(--r)">HIGH</b></div>
+      <div>
+        <small>GPS Location</small><b>22.288100, 73.362000</b><br>
+        <a href="https://www.google.com/maps/search/?api=1&query=22.288100,73.362000" target="_blank" style="color:var(--b); text-decoration:none; font-size:12px; display:inline-block; margin-top:4px;"><b>📍 View on Google Maps ↗</b></a>
+      </div>
+      <div><small>Department</small><b>Road & Infrastructure</b></div>
+    </div>
+    
+    <div class="card" style="margin-top:15px">
+      <h3>Complaint Record</h3>
+      <p style="margin-bottom:10px; line-height:1.5;">There is a massive pothole right outside the main gate causing traffic buildup and vehicle damage.</p>
+      <p style="margin:5px 0;">Citizen phone: <b>9876543210</b></p>
+      
+      <div style="margin-top:15px; border-top:1px solid var(--bd); padding-top:15px;">
+        <small style="display:block;color:var(--m);margin-bottom:8px">Citizen Uploaded Evidence (Click to view)</small>
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <img src="https://media.istockphoto.com/id/1154563853/photo/dangerous-pothole-in-the-asphalt-on-a-city-street.jpg?s=612x612&w=0&k=20&c=6-Z00g27E-b9u0Qz8oAohp0QhY9H6fK3t6D1xT52_T0=" alt="Evidence" style="width:140px; height:140px; object-fit:cover; border-radius:6px; border:1px solid var(--bd); cursor:zoom-in; transition: opacity 0.2s;" onclick="viewImage(this.src)" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">
+        </div>
+      </div>
+    </div>
+    
+    <div class="timeline">
+      <div class="tl done"><div class="d">✓</div>Submitted</div>
+      <div class="tl done"><div class="d">✓</div>Assigned</div>
+      <div class="tl done"><div class="d">✓</div>Inspection</div>
+      <div class="tl"><div class="d">4</div>In Progress</div>
+      <div class="tl"><div class="d">5</div>Resolved</div>
+    </div>
+    <div style="display:flex;gap:10px;margin-top:20px;">
+      <button class="action" onclick="update('in_progress')">Mark In Progress</button> 
+      <button class="action" style="background:var(--g)" onclick="update('resolved')">Mark Resolved</button>
+    </div>
+  </div>
+</div>
 <div id="toast" class="toast"></div>
+
+<!-- Fullscreen Image Lightbox -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+  <button class="close-lb" onclick="closeLightbox()">×</button>
+  <img id="lightboxImg" src="" alt="Full Screen Evidence" onclick="event.stopPropagation()">
+</div>
 
 <script type="module">
 import {initializeApp} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
 import {getAuth,signInAnonymously} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
 import {getFirestore,collection,onSnapshot,query,orderBy,limit,doc,updateDoc,serverTimestamp} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+
 const firebaseConfig={apiKey:"AIzaSyCAFAexk6uiWWKkC8_0lG0eoMIK0b7Xxao",authDomain:"oridix-43750.firebaseapp.com",projectId:"oridix-43750",storageBucket:"oridix-43750.firebasestorage.app",messagingSenderId:"149098665879",appId:"1:149098665879:web:956ceb76c922c73f1056d2",measurementId:"G-E3RVGJVZBK"};
 const app=initializeApp(firebaseConfig),auth=getAuth(app),db=getFirestore(app);
 let unsubscribe=null;
+
 function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 function statusClass(s){if(s==='resolved')return 'res';if(s==='in_progress')return 'prog';if(s==='assigned')return 'ass';return 'sub'}
 function priorityClass(p){return String(p).toLowerCase()==='high'||String(p).toLowerCase()==='critical'?'hi':'med'}
+
 function syncComplaints(){
   const q=query(collection(db,'complaints'),orderBy('createdAt','desc'),limit(50));
   unsubscribe=onSnapshot(q,snap=>{
     const rows=snap.docs.map(d=>({id:d.id,...d.data()}));
     const active=rows.filter(x=>x.status!=='draft');
+    
     const recent=document.querySelector('#dash table tbody');
     if(recent)recent.innerHTML=active.slice(0,8).map(x=>`<tr onclick="openModalById('${x.id}')" style="cursor:pointer"><td>${esc(x.complaintId||x.id)}</td><td>${esc(x.category||'Civic Grievance')}</td><td>${esc(x.locationText||'Map location')}</td><td><span class="pri ${priorityClass(x.priority)}">${esc(String(x.priority||'MEDIUM').toUpperCase())}</span></td><td><span class="status ${statusClass(x.status)}">${esc(String(x.status||'submitted').replaceAll('_',' '))}</span></td></tr>`).join('')||'<tr><td colspan="5">No complaints received yet.</td></tr>';
+    
     const grievanceBody=document.querySelector('#griev tbody');
     if(grievanceBody)grievanceBody.innerHTML=active.map(x=>`<tr><td>${esc(x.complaintId||x.id)}</td><td>${esc(x.category||'Civic Grievance')}</td><td>${esc(x.locationText||'Map location')}</td><td>${esc(x.category||'')}</td><td><span class="pri ${priorityClass(x.priority)}">${esc(String(x.priority||'MEDIUM').toUpperCase())}</span></td><td>${esc(x.departmentName||'Civic Services')}</td><td><span class="status ${statusClass(x.status)}">${esc(String(x.status||'submitted').replaceAll('_',' '))}</span></td><td><button class="mini" onclick="openModalById('${x.id}')">Review</button></td></tr>`).join('')||'<tr><td colspan="8">No complaints received yet.</td></tr>';
+    
     updateMetrics(active);
     window.civicComplaints=rows;
     const st=document.getElementById('adminFirebase');if(st){st.textContent='● Live synced';st.style.color='#16835b'}
   },e=>{console.error('Admin Firestore:',e);const st=document.getElementById('adminFirebase');if(st){st.textContent='● Firestore error';st.style.color='#b42318'}});
 }
+
 function updateMetrics(rows){
   const vals=[
     rows.length,
@@ -72,30 +137,69 @@ function updateMetrics(rows){
   ];
   document.querySelectorAll('.metrics .metric strong').forEach((el,i)=>{if(vals[i]!==undefined)el.textContent=vals[i].toLocaleString()});
 }
+
 async function changeComplaintStatus(id,status){
-  try{await updateDoc(doc(db,'complaints',id),{status,updatedAt:serverTimestamp()});toast('Complaint '+id+' updated to '+status.replaceAll('_',' ')+'.')}catch(e){console.error(e);toast('Could not update complaint. Check Firestore rules.')}
+  try{
+    await updateDoc(doc(db,'complaints',id),{status,updatedAt:serverTimestamp()});
+    toast('Complaint '+id+' updated to '+status.replaceAll('_',' ')+'.');
+    closeModal();
+  }catch(e){console.error(e);toast('Could not update complaint. Check Firestore rules.')}
 }
+
+// Dynamically generate the modal content for Firebase data
 window.openModalById=function(id){
   const x=(window.civicComplaints||[]).find(c=>c.id===id);
   if(!x)return;
   const box=document.querySelector('.box');
   if(!box)return;
-  box.innerHTML=`<button class="close" onclick="closeModal()">×</button><h2 style="color:var(--n)">Complaint ${esc(x.complaintId||x.id)}</h2>
+
+  // Render images if they exist in the evidenceUrls array
+  let evidenceHtml = '';
+  if(x.evidenceUrls && x.evidenceUrls.length > 0) {
+    evidenceHtml = `<div style="margin-top:15px; border-top:1px solid var(--bd); padding-top:15px;">
+      <small style="display:block;color:var(--m);margin-bottom:8px">Citizen Uploaded Evidence (Click to view)</small>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">`;
+    x.evidenceUrls.forEach(url => {
+      evidenceHtml += `<img src="${esc(url)}" alt="Evidence" style="width:140px; height:140px; object-fit:cover; border-radius:6px; border:1px solid var(--bd); cursor:zoom-in; transition: opacity 0.2s;" onclick="viewImage(this.src)" onmouseover="this.style.opacity=0.8" onmouseout="this.style.opacity=1">`;
+    });
+    evidenceHtml += `</div></div>`;
+  }
+  
+  // Generate Google Maps link if coordinates exist
+  let mapLink = '';
+  if(x.latitude && x.longitude) {
+    mapLink = `<a href="https://www.google.com/maps/search/?api=1&query=${x.latitude},${x.longitude}" target="_blank" style="color:var(--b); text-decoration:none; font-size:12px; display:inline-block; margin-top:4px;"><b>📍 View on Google Maps ↗</b></a>`;
+  }
+
+  box.innerHTML=`<button class="close" onclick="closeModal()" aria-label="Close modal">×</button>
+  <h2 style="color:var(--n);margin-top:0;">Complaint ${esc(x.complaintId||x.id)}</h2>
+  
   <div class="detail">
-  <div><small>Issue</small><b>${esc(x.description||x.category||'Civic Grievance')}</b></div>
-  <div><small>Location</small><b>${esc(x.locationText||'Map location attached')}</b></div>
-  <div><small>Category</small><b>${esc(x.category||'')}</b></div>
-  <div><small>Priority</small><b>${esc(x.priority||'Medium')}</b></div>
-  <div><small>Latitude</small><b>${esc(x.latitude??'—')}</b></div>
-  <div><small>Longitude</small><b>${esc(x.longitude??'—')}</b></div>
-  <div><small>Related complaints</small><b>${esc(x.relatedComplaintCount??0)}</b></div>
-  <div><small>Status</small><b>${esc(String(x.status||'submitted').replaceAll('_',' '))}</b></div>
+    <div><small>Issue</small><b>${esc(x.category||'Civic Grievance')}</b></div>
+    <div><small>Reported Address</small><b>${esc(x.locationText||'Not provided')}</b></div>
+    <div><small>Category</small><b>${esc(x.category||'')}</b></div>
+    <div><small>Priority</small><b>${esc(x.priority||'Medium')}</b></div>
+    <div>
+      <small>GPS Location</small><b>${esc(x.latitude??'—')}, ${esc(x.longitude??'—')}</b><br>
+      ${mapLink}
+    </div>
+    <div><small>Department</small><b>${esc(x.departmentName||'Civic Services')}</b></div>
   </div>
-  <div class="card" style="margin-top:15px"><h3>Complaint Record</h3><p>${esc(x.description||'')}</p><p>Department: <b>${esc(x.departmentName||'Civic Services')}</b></p><p>Citizen phone: <b>${esc(x.citizenPhone||'Not supplied')}</b></p></div>
-  <button class="action" onclick="changeComplaintStatus('${x.id}','in_progress')">Mark In Progress</button>
-  <button class="action" style="background:var(--g)" onclick="changeComplaintStatus('${x.id}','resolved')">Mark Resolved</button>`;
+  
+  <div class="card" style="margin-top:15px">
+    <h3>Complaint Record</h3>
+    <p style="margin-bottom:10px; line-height:1.5;">${esc(x.description||'')}</p>
+    <p style="margin:5px 0;">Citizen phone: <b>${esc(x.citizenPhone||'Not supplied')}</b></p>
+    ${evidenceHtml}
+  </div>
+  
+  <div style="display:flex; gap:10px; margin-top:20px;">
+      <button class="action" onclick="changeComplaintStatus('${x.id}','in_progress')">Mark In Progress</button>
+      <button class="action" style="background:var(--g)" onclick="changeComplaintStatus('${x.id}','resolved')">Mark Resolved</button>
+  </div>`;
   document.getElementById('modal').classList.add('open');
 }
+
 window.changeComplaintStatus=changeComplaintStatus;
 signInAnonymously(auth).then(()=>{syncComplaints()}).catch(e=>{console.error(e);const st=document.getElementById('adminFirebase');if(st){st.textContent='● Authentication unavailable';st.style.color='#b42318'}});
 </script>
@@ -108,4 +212,16 @@ function openModal(){document.getElementById('modal').classList.add('open')}
 function closeModal(){document.getElementById('modal').classList.remove('open')}
 function update(s){closeModal();toast(s==='resolved'?'Complaint marked as resolved.':'Complaint status updated to In Progress.')}
 function toast(t){let x=document.getElementById('toast');x.textContent=t;x.style.display='block';setTimeout(()=>x.style.display='none',2400)}
+
+/* Lightbox Logic */
+function viewImage(url) {
+  document.getElementById('lightboxImg').src = url;
+  document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  setTimeout(() => document.getElementById('lightboxImg').src = '', 200);
+}
+window.viewImage = viewImage;
+window.closeLightbox = closeLightbox;
 </script></body></html>

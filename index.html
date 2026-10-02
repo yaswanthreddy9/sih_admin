@@ -4,7 +4,7 @@
 <style>
 .menuBtn{display:block;border:1px solid var(--bd);background:#fff;color:var(--n);width:42px;height:42px;border-radius:7px;font-size:22px;margin-right:15px}.overlay{display:none;position:fixed;inset:0;background:#0005;z-index:40}.overlay.open{display:block}
 :root{--n:#102f50;--b:#1d5d91;--bg:#f3f6f9;--t:#1d2a36;--m:#6b7a88;--bd:#dbe4eb;--g:#16835b;--o:#c96b0a;--r:#b42318}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--t)}button,input,select{font:inherit}button{cursor:pointer}.top{height:8px;background:linear-gradient(90deg,#e38b2c 0 33%,#fff 33% 66%,#16835b 66%)}header{height:72px;background:#fff;border-bottom:1px solid var(--bd);display:flex;align-items:center;padding:0 28px;position:sticky;top:0;z-index:20}.brand{display:flex;gap:11px;align-items:center}.emblem{width:40px;height:40px;border:2px solid var(--n);border-radius:50%;display:grid;place-items:center;color:var(--n);font-weight:bold}.brand b{display:block;color:var(--n);font-size:19px}.brand small{color:var(--m)}.right{margin-left:auto;text-align:right}.right b{display:block}.right small{color:var(--m)}.layout{display:flex;min-height:calc(100vh - 80px)}aside{position:fixed;left:0;top:80px;bottom:0;width:240px;background:var(--n);padding:20px 13px;color:#fff;transform:translateX(-105%);transition:transform .25s ease;z-index:50;box-shadow:10px 0 30px #0003;overflow:auto}aside.open{transform:translateX(0)}.side-title{padding:0 12px 15px;font-size:11px;letter-spacing:1px;text-transform:uppercase;opacity:.65}.side button{width:100%;border:0;background:transparent;color:#e6eff6;text-align:left;padding:12px 13px;border-radius:6px;margin:2px 0}.side button.active,.side button:hover{background:var(--b)}main{padding:28px;max-width:1500px;width:100%}.view{display:none}.view.active{display:block}.title{display:flex;justify-content:space-between;align-items:end;margin-bottom:20px}.title h1{margin:0;color:var(--n);font-size:29px}.title p{color:var(--m);margin:6px 0 0}.action{border:0;border-radius:6px;padding:11px 16px;background:var(--n);color:#fff;font-weight:700;transition:opacity 0.2s;}.action:hover{opacity:0.9;}.metrics{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.metric,.card{background:#fff;border:1px solid var(--bd);border-radius:9px;padding:18px;box-shadow:0 5px 18px #12355b0d}.metric small{color:var(--m)}.metric strong{display:block;color:var(--n);font-size:26px;margin-top:8px}.grid{display:grid;grid-template-columns:1.6fr 1fr;gap:17px;margin-top:18px}h3{color:var(--n);margin-top:0;}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:11px 9px;border-bottom:1px solid #e8edf1;font-size:13px}th{color:#5c6e7e;background:#f8fafb}.status,.pri{display:inline-block;padding:5px 8px;border-radius:13px;font-size:11px;font-weight:700}.sub{background:#e9f1f8;color:var(--b)}.ass{background:#fff1dd;color:#9a5a08}.prog{background:#e8f5ef;color:#126744}.res{background:#e4f5ed;color:#126744}.hi{background:#fde8e7;color:#a52118}.med{background:#fff2dc;color:#9a5a08}.queue{border-left:4px solid var(--r);padding:12px 14px;background:#fff8f7;border-radius:5px;margin-bottom:10px}.mini{border:1px solid var(--bd);background:#fff;border-radius:6px;padding:7px 9px;color:var(--n);transition:background 0.2s;}.mini:hover{background:#f8fafb;}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:15px}.filters input,.filters select{border:1px solid var(--bd);border-radius:6px;padding:10px;background:#fff}.filters input{min-width:240px}.chart{height:210px;display:flex;align-items:end;gap:12px;padding:10px 5px 0;border-bottom:1px solid var(--bd)}.bar{flex:1;background:var(--b);border-radius:5px 5px 0 0;position:relative;min-height:20px}.bar span{position:absolute;bottom:-22px;left:50%;transform:translateX(-50%);font-size:10px;color:var(--m)}.map{height:350px;border:1px solid var(--bd);border-radius:9px;background:linear-gradient(145deg,#e7efe9,#dce8ef);position:relative;overflow:hidden}.map:before{content:"";position:absolute;inset:15px;background:repeating-linear-gradient(20deg,transparent 0 55px,#fff 56px 59px),repeating-linear-gradient(110deg,transparent 0 75px,#fff 76px 79px)}.marker{position:absolute;width:30px;height:30px;border-radius:50%;background:var(--r);border:4px solid #fff;box-shadow:0 2px 7px #777}.m1{left:40%;top:35%}.m2{left:61%;top:53%;background:var(--o)}.m3{left:25%;top:62%;background:var(--g)}.m4{left:72%;top:27%}.detail{display:grid;grid-template-columns:1fr 1fr;gap:12px}.detail div{background:#f8fafb;border:1px solid var(--bd);border-radius:7px;padding:12px}.detail small{display:block;color:var(--m);margin-bottom:5px}.timeline{display:flex;gap:8px;margin:20px 0}.tl{flex:1;text-align:center;font-size:11px;color:#8794a0}.tl .d{width:25px;height:25px;border-radius:50%;background:#dce4ea;margin:auto auto 7px;display:grid;place-items:center}.tl.done{color:var(--g);font-weight:700}.tl.done .d{background:#dcf2e7}.modal{position:fixed;inset:0;background:#0006;display:none;align-items:center;justify-content:center;padding:20px;z-index:90;backdrop-filter:blur(2px);}.modal.open{display:flex}.box{background:#fff;border-radius:11px;padding:24px;max-width:700px;width:100%;max-height:90vh;overflow:auto;position:relative;}.close{position:absolute;right:20px;top:20px;border:0;background:none;font-size:28px;color:var(--m);line-height:1;transition:color 0.2s;}.close:hover{color:var(--r);}.toast{position:fixed;right:25px;bottom:25px;background:var(--n);color:#fff;padding:13px 17px;border-radius:8px;display:none;z-index:100;box-shadow:0 4px 15px rgba(0,0,0,0.2);}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--t)}button,input,select{font:inherit}button{cursor:pointer}.top{height:8px;background:linear-gradient(90deg,#e38b2c 0 33%,#fff 33% 66%,#16835b 66%)}header{height:72px;background:#fff;border-bottom:1px solid var(--bd);display:flex;align-items:center;padding:0 28px;position:sticky;top:0;z-index:20}.brand{display:flex;gap:11px;align-items:center}.emblem{width:40px;height:40px;border:2px solid var(--n);border-radius:50%;display:grid;place-items:center;color:var(--n);font-weight:bold}.brand b{display:block;color:var(--n);font-size:19px}.brand small{color:var(--m)}.right{margin-left:auto;text-align:right}.right b{display:block}.right small{color:var(--m)}.layout{display:flex;min-height:calc(100vh - 80px)}aside{position:fixed;left:0;top:80px;bottom:0;width:240px;background:var(--n);padding:20px 13px;color:#fff;transform:translateX(-105%);transition:transform .25s ease;z-index:50;box-shadow:10px 0 30px #0003;overflow:auto}aside.open{transform:translateX(0)}.side-title{padding:0 12px 15px;font-size:11px;letter-spacing:1px;text-transform:uppercase;opacity:.65}.side button{width:100%;border:0;background:transparent;color:#e6eff6;text-align:left;padding:12px 13px;border-radius:6px;margin:2px 0}.side button.active,.side button:hover{background:var(--b)}main{padding:28px;max-width:1500px;width:100%}.view{display:none}.view.active{display:block}.title{display:flex;justify-content:space-between;align-items:end;margin-bottom:20px}.title h1{margin:0;color:var(--n);font-size:29px}.title p{color:var(--m);margin:6px 0 0}.action{border:0;border-radius:6px;padding:11px 16px;background:var(--n);color:#fff;font-weight:700;transition:opacity 0.2s;}.action:hover{opacity:0.9;}.metrics{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.metric,.card{background:#fff;border:1px solid var(--bd);border-radius:9px;padding:18px;box-shadow:0 5px 18px #12355b0d}.metric small{color:var(--m)}.metric strong{display:block;color:var(--n);font-size:26px;margin-top:8px}.grid{display:grid;grid-template-columns:1.6fr 1fr;gap:17px;margin-top:18px}h3{color:var(--n);margin-top:0;}table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:11px 9px;border-bottom:1px solid #e8edf1;font-size:13px}th{color:#5c6e7e;background:#f8fafb}.status,.pri{display:inline-block;padding:5px 8px;border-radius:13px;font-size:11px;font-weight:700}.sub{background:#e9f1f8;color:var(--b)}.ass{background:#fff1dd;color:#9a5a08}.prog{background:#e8f5ef;color:#126744}.res{background:#e4f5ed;color:#126744}.hi{background:#fde8e7;color:#a52118}.med{background:#fff2dc;color:#9a5a08}.queue{border-left:4px solid var(--r);padding:12px 14px;background:#fff8f7;border-radius:5px;margin-bottom:10px}.mini{border:1px solid var(--bd);background:#fff;border-radius:6px;padding:7px 9px;color:var(--n);transition:background 0.2s;}.mini:hover{background:#f8fafb;}.employee-actions{display:flex;gap:5px;align-items:center;}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:15px}.filters input,.filters select{border:1px solid var(--bd);border-radius:6px;padding:10px;background:#fff}.filters input{min-width:240px}.chart{height:210px;display:flex;align-items:end;gap:12px;padding:10px 5px 0;border-bottom:1px solid var(--bd)}.bar{flex:1;background:var(--b);border-radius:5px 5px 0 0;position:relative;min-height:20px}.bar span{position:absolute;bottom:-22px;left:50%;transform:translateX(-50%);font-size:10px;color:var(--m)}.map{height:350px;border:1px solid var(--bd);border-radius:9px;background:linear-gradient(145deg,#e7efe9,#dce8ef);position:relative;overflow:hidden}.map:before{content:"";position:absolute;inset:15px;background:repeating-linear-gradient(20deg,transparent 0 55px,#fff 56px 59px),repeating-linear-gradient(110deg,transparent 0 75px,#fff 76px 79px)}.marker{position:absolute;width:30px;height:30px;border-radius:50%;background:var(--r);border:4px solid #fff;box-shadow:0 2px 7px #777}.m1{left:40%;top:35%}.m2{left:61%;top:53%;background:var(--o)}.m3{left:25%;top:62%;background:var(--g)}.m4{left:72%;top:27%}.detail{display:grid;grid-template-columns:1fr 1fr;gap:12px}.detail div{background:#f8fafb;border:1px solid var(--bd);border-radius:7px;padding:12px}.detail small{display:block;color:var(--m);margin-bottom:5px}.timeline{display:flex;gap:8px;margin:20px 0}.tl{flex:1;text-align:center;font-size:11px;color:#8794a0}.tl .d{width:25px;height:25px;border-radius:50%;background:#dce4ea;margin:auto auto 7px;display:grid;place-items:center}.tl.done{color:var(--g);font-weight:700}.tl.done .d{background:#dcf2e7}.modal{position:fixed;inset:0;background:#0006;display:none;align-items:center;justify-content:center;padding:20px;z-index:90;backdrop-filter:blur(2px);}.modal.open{display:flex}.box{background:#fff;border-radius:11px;padding:24px;max-width:700px;width:100%;max-height:90vh;overflow:auto;position:relative;}.close{position:absolute;right:20px;top:20px;border:0;background:none;font-size:28px;color:var(--m);line-height:1;transition:color 0.2s;}.close:hover{color:var(--r);}.toast{position:fixed;right:25px;bottom:25px;background:var(--n);color:#fff;padding:13px 17px;border-radius:8px;display:none;z-index:100;box-shadow:0 4px 15px rgba(0,0,0,0.2);}
 
 /* Lightbox Styles for Image Viewing */
 .lightbox { display:none; position:fixed; inset:0; background:rgba(0,0,0,0.85); z-index:1000; align-items:center; justify-content:center; padding:20px; backdrop-filter:blur(4px); }
@@ -40,7 +40,7 @@
 
 <section id="feedback" class="view"><div class="title"><div><h1>Citizen Feedback</h1><p>Service experience after grievance resolution.</p></div></div><div class="grid"><div class="card"><h3>Average Satisfaction</h3><strong style="font-size:38px;color:var(--n)">4.2 / 5</strong></div><div class="card"><h3>★★★★★</h3><p>"Problem was resolved quickly."</p></div></div></section>
 
-<section id="employees" class="view"><div class="title"><div><h1>Employees</h1><p>Manage field employees who can receive civic assignments and provide their mobile contact details.</p></div><button id="addEmployeeBtn" class="action" onclick="openEmployeeModal()" disabled title="Login required">+ Add Employee</button></div><div id="employeeAuthNotice" style="display:none;margin-bottom:15px;padding:12px 14px;background:#fff8e8;border:1px solid #f0d79c;border-radius:7px;color:#7a5b12;font-size:13px;">🔒 Login required for Employee access. Use an existing Firebase Authentication account.</div><div class="card"><div class="filters"><input id="employeeSearch" placeholder="Search employee, category or pincode" oninput="renderEmployees()"><select id="employeeCategoryFilter" onchange="renderEmployees()"><option value="">All Categories</option></select></div><table><thead><tr><th>Name</th><th>Category</th><th>Description</th><th>Pincode</th><th>Mobile Number</th><th>Status</th></tr></thead><tbody id="employeeTableBody"><tr><td colspan="6">Loading employees...</td></tr></tbody></table></div></section>
+<section id="employees" class="view"><div class="title"><div><h1>Employees</h1><p>Manage field employees who can receive civic assignments and provide their mobile contact details.</p></div><button id="addEmployeeBtn" class="action" onclick="openEmployeeModal()" disabled title="Login required">+ Add Employee</button></div><div id="employeeAuthNotice" style="display:none;margin-bottom:15px;padding:12px 14px;background:#fff8e8;border:1px solid #f0d79c;border-radius:7px;color:#7a5b12;font-size:13px;">🔒 Login required for Employee access. Use an existing Firebase Authentication account.</div><div class="card"><div class="filters"><input id="employeeSearch" placeholder="Search employee, category or pincode" oninput="renderEmployees()"><select id="employeeCategoryFilter" onchange="renderEmployees()"><option value="">All Categories</option></select></div><table><thead><tr><th>Name</th><th>Category</th><th>Description</th><th>Pincode</th><th>Mobile Number</th><th>Status</th><th>Actions</th></tr></thead><tbody id="employeeTableBody"><tr><td colspan="6">Loading employees...</td></tr></tbody></table></div></section>
 
 <section id="audit" class="view"><div class="title"><div><h1>Audit Log</h1><p>Traceable administrative activity.</p></div></div><div class="card"><table><thead><tr><th>Time</th><th>Actor</th><th>Action</th><th>Complaint</th></tr></thead><tbody><tr><td>10 Aug 2026 16:20</td><td>Officer B</td><td>Assigned complaint</td><td>VMC-2026-004821</td></tr><tr><td>10 Aug 2026 16:15</td><td>AI Assistant</td><td>Related issue cluster detected</td><td>VMC-2026-004821</td></tr><tr><td>10 Aug 2026 16:12</td><td>Officer A</td><td>Priority changed Medium → High</td><td>VMC-2026-004821</td></tr></tbody></table></div></section>
 </main></div>
@@ -90,7 +90,7 @@
   </div>
 </div>
 <div id="loginModal" class="modal" onclick="if(event.target===this)closeLoginModal()"><div class="box"><button class="close" onclick="closeLoginModal()" aria-label="Close">×</button><h2 style="color:var(--n);margin-top:0;">Admin Login</h2><p style="color:var(--m);margin-top:-8px;">Testing access only. There is no account creation here.</p><form id="loginForm" onsubmit="loginAdmin(event)"><div class="detail"><div style="grid-column:1/-1;"><small>Email *</small><input id="loginEmail" type="email" autocomplete="username" required placeholder="Existing Firebase Authentication email" style="width:100%;padding:10px;border:1px solid var(--bd);border-radius:6px;"></div><div style="grid-column:1/-1;"><small>Password *</small><input id="loginPassword" type="password" autocomplete="current-password" required placeholder="Password" style="width:100%;padding:10px;border:1px solid var(--bd);border-radius:6px;"></div></div><div id="loginError" style="display:none;margin-top:12px;padding:10px;border-radius:6px;background:#fff3f2;color:var(--r);font-size:13px;"></div><div style="display:flex;justify-content:flex-end;gap:10px;margin-top:20px;"><button type="button" class="mini" onclick="closeLoginModal()">Cancel</button><button type="submit" id="loginSubmitBtn" class="action">Login</button></div></form></div></div>
-<div id="employeeModal" class="modal" onclick="if(event.target===this)closeEmployeeModal()"><div class="box"><button class="close" onclick="closeEmployeeModal()" aria-label="Close">×</button><h2 style="color:var(--n);margin-top:0;">Add Employee</h2><p style="color:var(--m);margin-top:-8px;">Create a field employee profile for civic assignment and contact.</p><form id="employeeForm" onsubmit="saveEmployee(event)"><div class="detail"><div><small>Employee Name *</small><input id="employeeName" required maxlength="80" placeholder="Full name" style="width:100%;padding:10px;border:1px solid var(--bd);border-radius:6px;"></div><div><small>Civic Category *</small><select id="employeeCategory" required style="width:100%;padding:10px;border:1px solid var(--bd);border-radius:6px;background:#fff;"><option value="">Select category</option></select></div><div style="grid-column:1/-1;"><small>Description *</small><textarea id="employeeDescription" required maxlength="500" rows="4" placeholder="Describe the employee's work role / responsibility" style="width:100%;padding:10px;border:1px solid var(--bd);border-radius:6px;resize:vertical;"></textarea></div><div><small>Pincode *</small><input id="employeePincode" required inputmode="numeric" maxlength="6" pattern="[0-9]{6}" placeholder="6-digit pincode" style="width:100%;padding:10px;border:1px solid var(--bd);border-radius:6px;"></div><div><small>Mobile Number *</small><input id="employeeMobile" required inputmode="numeric" maxlength="10" pattern="[6-9][0-9]{9}" placeholder="10-digit mobile number" style="width:100%;padding:10px;border:1px solid var(--bd);border-radius:6px;"></div></div><div style="display:flex;justify-content:flex-end;gap:10px;margin-top:20px;"><button type="button" class="mini" onclick="closeEmployeeModal()">Cancel</button><button type="submit" id="saveEmployeeBtn" class="action">Save Employee</button></div></form></div></div>
+<div id="employeeModal" class="modal" onclick="if(event.target===this)closeEmployeeModal()"><div class="box"><button class="close" onclick="closeEmployeeModal()" aria-label="Close">×</button><h2 id="employeeModalTitle" style="color:var(--n);margin-top:0;">Add Employee</h2><p style="color:var(--m);margin-top:-8px;">Create a field employee profile for civic assignment and contact.</p><form id="employeeForm" onsubmit="saveEmployee(event)"><div class="detail"><div><small>Employee Name *</small><input id="employeeName" required maxlength="80" placeholder="Full name" style="width:100%;padding:10px;border:1px solid var(--bd);border-radius:6px;"></div><div><small>Civic Category *</small><select id="employeeCategory" required style="width:100%;padding:10px;border:1px solid var(--bd);border-radius:6px;background:#fff;"><option value="">Select category</option></select></div><div style="grid-column:1/-1;"><small>Description *</small><textarea id="employeeDescription" required maxlength="500" rows="4" placeholder="Describe the employee's work role / responsibility" style="width:100%;padding:10px;border:1px solid var(--bd);border-radius:6px;resize:vertical;"></textarea></div><div><small>Pincode *</small><input id="employeePincode" required inputmode="numeric" maxlength="6" pattern="[0-9]{6}" placeholder="6-digit pincode" style="width:100%;padding:10px;border:1px solid var(--bd);border-radius:6px;"></div><div><small>Mobile Number *</small><input id="employeeMobile" required inputmode="numeric" maxlength="10" pattern="[6-9][0-9]{9}" placeholder="10-digit mobile number" style="width:100%;padding:10px;border:1px solid var(--bd);border-radius:6px;"></div></div><div style="display:flex;justify-content:flex-end;gap:10px;margin-top:20px;"><button type="button" class="mini" onclick="closeEmployeeModal()">Cancel</button><button type="submit" id="saveEmployeeBtn" class="action">Save Employee</button></div></form></div></div>
 <div id="toast" class="toast"></div>
 
 <!-- Fullscreen Image Lightbox -->
@@ -102,7 +102,7 @@
 <script type="module">
 import {initializeApp} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-app.js";
 import {getAuth,signInAnonymously,signInWithEmailAndPassword,onAuthStateChanged,signOut} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-auth.js";
-import {getFirestore,collection,onSnapshot,query,orderBy,limit,doc,updateDoc,serverTimestamp,addDoc} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
+import {getFirestore,collection,onSnapshot,query,orderBy,limit,doc,updateDoc,serverTimestamp,addDoc,deleteDoc} from "https://www.gstatic.com/firebasejs/12.0.0/firebase-firestore.js";
 
 const firebaseConfig={apiKey:"AIzaSyCAFAexk6uiWWKkC8_0lG0eoMIK0b7Xxao",authDomain:"oridix-43750.firebaseapp.com",projectId:"oridix-43750",storageBucket:"oridix-43750.firebasestorage.app",messagingSenderId:"149098665879",appId:"1:149098665879:web:956ceb76c922c73f1056d2",measurementId:"G-E3RVGJVZBK"};
 const app=initializeApp(firebaseConfig),auth=getAuth(app),db=getFirestore(app);
@@ -116,11 +116,155 @@ const CIVIC_CATEGORIES=['Road & Transport','Electrical / Streetlights','Traffic'
 let employeeRows=[];
 let unsubscribeEmployees=null;
 function populateEmployeeCategoryLists(){const a=document.getElementById('employeeCategory'),b=document.getElementById('employeeCategoryFilter');if(a)a.innerHTML='<option value="">Select category</option>'+CIVIC_CATEGORIES.map(c=>`<option value="${esc(c)}">${esc(c)}</option>`).join('');if(b)b.innerHTML='<option value="">All Categories</option>'+CIVIC_CATEGORIES.map(c=>`<option value="${esc(c)}">${esc(c)}</option>`).join('');}
-function renderEmployees(){const tbody=document.getElementById('employeeTableBody');if(!tbody)return;const search=String(document.getElementById('employeeSearch')?.value||'').trim().toLowerCase(),category=String(document.getElementById('employeeCategoryFilter')?.value||'');const filtered=employeeRows.filter(x=>{const hay=[x.name,x.category,x.description,x.pincode,x.mobileNumber].map(v=>String(v||'').toLowerCase()).join(' ');return(!search||hay.includes(search))&&(!category||String(x.category||'')===category);});tbody.innerHTML=filtered.map(x=>`<tr><td><b>${esc(x.name||'')}</b></td><td>${esc(x.category||'')}</td><td style="max-width:320px;">${esc(x.description||'')}</td><td>${esc(x.pincode||'')}</td><td><a href="tel:${esc(x.mobileNumber||'')}" style="color:var(--b);text-decoration:none;">${esc(x.mobileNumber||'')}</a></td><td>${x.active===false?'<span class="status sub">Inactive</span>':'<span class="status prog">Active</span>'}</td></tr>`).join('')||'<tr><td colspan="6">No employees found.</td></tr>'; }
+function renderEmployees(){
+  const tbody=document.getElementById('employeeTableBody');
+  if(!tbody)return;
+  const search=String(document.getElementById('employeeSearch')?.value||'').trim().toLowerCase();
+  const category=String(document.getElementById('employeeCategoryFilter')?.value||'');
+  const filtered=employeeRows.filter(x=>{
+    const hay=[x.name,x.category,x.description,x.pincode,x.mobileNumber].map(v=>String(v||'').toLowerCase()).join(' ');
+    return(!search||hay.includes(search))&&(!category||String(x.category||'')===category);
+  });
+  tbody.innerHTML=filtered.map(x=>{
+    const id=String(x.id||'');
+    return `<tr>
+      <td><b>${esc(x.name||'')}</b></td>
+      <td>${esc(x.category||'')}</td>
+      <td style="max-width:320px;">${esc(x.description||'')}</td>
+      <td>${esc(x.pincode||'')}</td>
+      <td><a href="tel:${esc(x.mobileNumber||'')}" style="color:var(--b);text-decoration:none;">${esc(x.mobileNumber||'')}</a></td>
+      <td>${x.active===false?'<span class="status sub">Inactive</span>':'<span class="status prog">Active</span>'}</td>
+      <td style="white-space:nowrap;">
+        <button class="mini" type="button" onclick="editEmployee('${esc(id)}')">Edit</button>
+        <button class="mini" type="button" style="margin-left:5px;color:var(--r);border-color:#efc5c2;" onclick="deleteEmployee('${esc(id)}')">Delete</button>
+      </td>
+    </tr>`;
+  }).join('')||'<tr><td colspan="7">No employees found.</td></tr>';
+}
+
 function isPasswordAdminSession(){const u=auth.currentUser;return !!(u && !u.isAnonymous && u.email);}
 function setEmployeeAccessUI(){const logged=isPasswordAdminSession();const add=document.getElementById('addEmployeeBtn'),notice=document.getElementById('employeeAuthNotice');if(add){add.disabled=!logged;add.title=logged?'Add employee':'Login required';}if(notice)notice.style.display=logged?'none':'block';if(!logged){employeeRows=[];renderEmployees();}}
 function syncEmployees(){if(!isPasswordAdminSession()){setEmployeeAccessUI();const tbody=document.getElementById('employeeTableBody');if(tbody)tbody.innerHTML='<tr><td colspan="6">Login required to view employees.</td></tr>';return;}const q=query(collection(db,'employees'),orderBy('createdAt','desc'),limit(200));if(unsubscribeEmployees)unsubscribeEmployees();unsubscribeEmployees=onSnapshot(q,snap=>{employeeRows=snap.docs.map(d=>({id:d.id,...d.data()}));window.civicEmployees=employeeRows;renderEmployees();setEmployeeAccessUI();},e=>{console.error('Employee Firestore:',e);const tbody=document.getElementById('employeeTableBody');if(tbody)tbody.innerHTML='<tr><td colspan="6">Employee access denied. Sign in with an existing Firebase account.</td></tr>';setEmployeeAccessUI();});}
-window.openEmployeeModal=function(){if(!isPasswordAdminSession()){toast('Please login first for Employee access.');openLoginModal();return;}populateEmployeeCategoryLists();document.getElementById('employeeForm')?.reset();document.getElementById('employeeModal').classList.add('open');};
+let editingEmployeeId='';
+
+window.openEmployeeModal=function(employeeId=''){
+  if(!isPasswordAdminSession()){
+    toast('Please login first for Employee access.');
+    openLoginModal();
+    return;
+  }
+  populateEmployeeCategoryLists();
+  editingEmployeeId=String(employeeId||'');
+  const form=document.getElementById('employeeForm');
+  if(form)form.reset();
+  const title=document.getElementById('employeeModalTitle');
+  const saveBtn=document.getElementById('saveEmployeeBtn');
+  if(editingEmployeeId){
+    const employee=employeeRows.find(x=>String(x.id||'')===editingEmployeeId);
+    if(!employee){toast('Employee record not found. Please refresh and try again.');editingEmployeeId='';return;}
+    document.getElementById('employeeName').value=String(employee.name||'');
+    document.getElementById('employeeCategory').value=String(employee.category||'');
+    document.getElementById('employeeDescription').value=String(employee.description||'');
+    document.getElementById('employeePincode').value=String(employee.pincode||'');
+    document.getElementById('employeeMobile').value=String(employee.mobileNumber||'');
+    if(title)title.textContent='Edit Employee';
+    if(saveBtn)saveBtn.textContent='Update Employee';
+  }else{
+    if(title)title.textContent='Add Employee';
+    if(saveBtn)saveBtn.textContent='Save Employee';
+  }
+  document.getElementById('employeeModal').classList.add('open');
+};
+
+window.editEmployee=function(employeeId){
+  openEmployeeModal(employeeId);
+};
+
+window.closeEmployeeModal=function(){
+  document.getElementById('employeeModal').classList.remove('open');
+  editingEmployeeId='';
+  const title=document.getElementById('employeeModalTitle');
+  const saveBtn=document.getElementById('saveEmployeeBtn');
+  if(title)title.textContent='Add Employee';
+  if(saveBtn)saveBtn.textContent='Save Employee';
+};
+
+window.saveEmployee=async function(event){
+  event.preventDefault();
+  if(!isPasswordAdminSession()){
+    toast('Please login first for Employee access.');
+    return;
+  }
+  const name=document.getElementById('employeeName').value.trim();
+  const category=document.getElementById('employeeCategory').value;
+  const description=document.getElementById('employeeDescription').value.trim();
+  const pincode=document.getElementById('employeePincode').value.trim();
+  const mobileNumber=document.getElementById('employeeMobile').value.trim();
+  if(!name||!category||!description||!pincode||!mobileNumber){toast('Please complete all required employee details.');return;}
+  if(!/^[0-9]{6}$/.test(pincode)){toast('Pincode must contain 6 digits.');return;}
+  if(!/^[6-9][0-9]{9}$/.test(mobileNumber)){toast('Enter a valid 10-digit mobile number.');return;}
+
+  const btn=document.getElementById('saveEmployeeBtn');
+  btn.disabled=true;
+  btn.textContent=editingEmployeeId?'Updating...':'Saving...';
+  try{
+    if(editingEmployeeId){
+      await updateDoc(doc(db,'employees',editingEmployeeId),{
+        name,
+        category,
+        description,
+        pincode,
+        mobileNumber,
+        updatedAt:serverTimestamp()
+      });
+      closeEmployeeModal();
+      toast('Employee updated successfully.');
+    }else{
+      await addDoc(collection(db,'employees'),{
+        name,
+        category,
+        description,
+        pincode,
+        mobileNumber,
+        active:true,
+        createdAt:serverTimestamp(),
+        updatedAt:serverTimestamp(),
+        source:'authority-dashboard'
+      });
+      closeEmployeeModal();
+      toast('Employee added successfully.');
+    }
+  }catch(e){
+    console.error(editingEmployeeId?'Update employee:':'Save employee:',e);
+    toast((editingEmployeeId?'Could not update employee. ':'Could not save employee. ')+'Check Firestore rules.');
+  }finally{
+    btn.disabled=false;
+    btn.textContent='Save Employee';
+  }
+};
+
+window.deleteEmployee=async function(employeeId){
+  if(!isPasswordAdminSession()){
+    toast('Please login first for Employee access.');
+    openLoginModal();
+    return;
+  }
+  const employee=employeeRows.find(x=>String(x.id||'')===String(employeeId||''));
+  if(!employee){toast('Employee record not found. Please refresh and try again.');return;}
+  const name=String(employee.name||'this employee');
+  const confirmed=window.confirm(`Delete employee "${name}"? This will permanently remove the employee record.`);
+  if(!confirmed)return;
+
+  try{
+    await deleteDoc(doc(db,'employees',String(employeeId)));
+    toast('Employee deleted successfully.');
+  }catch(e){
+    console.error('Delete employee:',e);
+    toast('Could not delete employee. Check Firestore rules.');
+  }
+};
+
+populateEmployeeCategoryLists();document.getElementById('employeeForm')?.reset();document.getElementById('employeeModal').classList.add('open');};
 window.closeEmployeeModal=function(){document.getElementById('employeeModal').classList.remove('open');};
 window.saveEmployee=async function(event){event.preventDefault();const name=document.getElementById('employeeName').value.trim(),category=document.getElementById('employeeCategory').value,description=document.getElementById('employeeDescription').value.trim(),pincode=document.getElementById('employeePincode').value.trim(),mobileNumber=document.getElementById('employeeMobile').value.trim();if(!name||!category||!description||!pincode||!mobileNumber){toast('Please complete all required employee details.');return;}if(!/^[0-9]{6}$/.test(pincode)){toast('Pincode must contain 6 digits.');return;}if(!/^[6-9][0-9]{9}$/.test(mobileNumber)){toast('Enter a valid 10-digit mobile number.');return;}const btn=document.getElementById('saveEmployeeBtn');btn.disabled=true;btn.textContent='Saving...';try{await addDoc(collection(db,'employees'),{name,category,description,pincode,mobileNumber,active:true,createdAt:serverTimestamp(),updatedAt:serverTimestamp(),source:'authority-dashboard'});closeEmployeeModal();toast('Employee added successfully.');}catch(e){console.error('Save employee:',e);toast('Could not save employee. Check Firestore rules.');}finally{btn.disabled=false;btn.textContent='Save Employee';}};
 populateEmployeeCategoryLists();
